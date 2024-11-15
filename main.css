@@ -1,0 +1,201 @@
+@import url('/reset.css');
+
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+
+header {
+    background-image: url('./img/background.png'); /* Шлях до вашого зображення */
+    background-size: cover; /* Масштабує зображення, щоб воно покривало обидва елементи */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Запобігає повторенню зображення */
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px; /* Відступ між елементами навігації */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Забираємо відступ після останнього елемента */
+}
+
+#banner {
+    padding: 200px 0px 200px 0px;
+}
+
+main {
+    background-image: url('./img/main-bg.png'); /* Шлях до вашого зображення */
+    background-size: cover; /* Масштабує зображення, щоб воно покривало обидва елементи */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Запобігає повторенню зображення */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Загальний стиль для форми */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #2b2b2b;
+    border-radius: 8px;
+    background-color: rgba(44, 44, 44, 0.5);
+    font-size: 20px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Стиль для міток */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Стиль для текстових полів і текстових зон */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+}
+
+form #phone, #message {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 10px;
+    font-style: normal;
+}
+
+/* Стиль для чекбоксу */
+.styler .jq-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Стиль для кнопки */
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5b5b5b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+form button[type="submit"]:hover {
+    background-color: #464646;
+}
+
+#useful-links {
+    padding: 10px; 
+}
+
+#useful-links ul li {
+    color: rgba(44, 44, 44, 0.5);
+}
+
+#contact {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+#contact p {
+    margin: 0;
+}
+
+#source {
+    display: flex;
+}
+
+#source img {
+    width: 50px;
+    margin-left: 10px; 
+}
+
+  @media (max-width: 1920px) {
+
+  }
+  
+  @media (max-width: 1440px) {
+
+  }
+  
+  @media (max-width: 1024px) {
+
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+    #source img {
+        width: 25px;
+        margin-left: 5px; 
+    }
+
+    form {
+        max-width: 250px;
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+    form label {
+        margin-bottom: 4px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+        padding: 5px;
+        margin-bottom: 7px;
+        border: 1px solid #444444;
+        border-radius: 2px;
+    }
+    form #phone, #message {
+        font-size: 5px;
+    }
+    .styler .jq-checkbox {
+        margin-right: 2,5px;
+    }
+    form button[type="submit"] {
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+  }
+  
+  @media (max-width: 320px) {
+    #about p {
+        margin: 0px 20px 0px 20px;
+    }
+  }
+  

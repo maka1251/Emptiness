@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="icon" href="/favicon-32x32.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/libs/formstyler/jquery.formstyler.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/libs/formstyler/jquery.formstyler.min.js"></script>
+    
+    <title>Emptiness</title>
+</head>
+<body>
+
+    <!-- Шапка з навігацією -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <!-- Секція банер -->
+        <section id="banner" aria-labelledby="banner-title">
+            <h1 id="banner-title">Вітаємо на нашій сторінці!</h1>
+            <p>Це короткий опис сторінки. Дякуємо за відвідування.</p>
+        </section>
+    </header>
+
+    <!-- Основний контент сторінки -->
+    <main>
+        <!-- Секція про нас -->
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Про нас</h2>
+            <p>Ми - компанія, яка прагне досягти найвищих результатів. Наша команда складається з професіоналів, які завжди готові до нових викликів.</p>
+        </section>
+
+    <form action="#" method="post">
+        <!-- Ім'я користувача -->
+        <label for="name">Ім'я користувача:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <!-- Пошта -->
+        <label for="email">Пошта:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <!-- Номер мобільного телефону -->
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+380\d{9}$" placeholder="+380" required>
+    
+        <!-- Повідомлення -->
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+    
+        <!-- Згода на обробку даних -->
+        <label for="consent">
+            <input type="checkbox" id="consent" name="consent" required> Я погоджуюсь на надання особистих даних
+        </label>
+    
+        <!-- Кнопка відправити -->
+        <button type="submit">Відправити</button>
+    </form>
+
+    </main> 
+
+    <!-- Футер -->
+    <footer>
+        <div id="useful-links">
+            <h3>Корисні посилання</h3>
+            <ul>
+                <li><a href="#privacy">Політика конфіденційності</a></li>
+                <li><a href="#terms">Умови використання</a></li>
+                <li><a href="#support">Підтримка</a></li>
+            </ul>
+        </div>
+        <div id="contact">
+            <p>&copy; 2024 Emptiness. All rights reserved.</p>
+            <div id="source">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100034321041969"><img src="./img/facebook.png" alt="#"></a>
+                <img src="./img/twitter.png" alt="#">
+                <img src="./img/youtube.png" alt="#">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+    
+</body>
+</html>
